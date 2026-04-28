@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code 5 - Om oss</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">Code 5</h1>
+    <nav aria-label="Snabbnavigering">
+      <a href="#intro">Om oss</a>
+      <a href="#berfin">Berfin</a>
+      <a href="#chipego">Chipego</a>
+      <a href="#bayan">Bayan</a>
+      <a href="#ali">Ali</a>
+      <a href="#andy">Andy</a>
+    </nav>
+  </header>
+
+  <main id="main" class="snap-container">
+  
+    <section id="intro" class="panel intro" style="--c:#7c3aed">
+      <div class="content intro-grid">
+        <figure class="group-photo">
+          <img src="code5-group.png" alt="Code 5 - vårt team i kontorsmiljö">
+          <figcaption>Code 5 - vi pluggar frontend, peppar varandra och har kul på vägen.</figcaption>
+        </figure>
+
+        <div class="text">
+          <h2>Om oss</h2>
+          <p>Vi är <strong>Code 5</strong> - fem glada frontendstudenter som pluggar till
+            frontendutvecklare. Vi delar inte bara ett intresse för kod och design, utan också en
+            vilja att hjälpa varandra och ha kul på vägen. Våra styrkor ligger i kreativitet,
+            samarbete och att aldrig ge upp när något strular. Tillsammans är vi ett lag som gillar
+            att lära, skratta och bygga snygga, smarta lösningar.</p>
+          <p>Scrolla ner för att lära känna oss lite bättre! ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Berfin -->
+    <section id="berfin" class="panel" style="--c:#f97316">
+      <div class="content">
+        <div class="text">
+          <h2>Berfin</h2>
+          <p>Berfin sprider värme och energi. Hon är nyfiken, målmedveten och tycker om att skapa ordning i det som först känns rörigt. 
+          Hon gillar att göra saker tydliga och tillgängliga för alla – och det märks både i hennes kod och i samarbetet i teamet.</p>
+          <p class="quote">“En bra dag börjar med kaffe och slutar med ett skratt.”</p>
+        </div>
+        <figure class="photo">
+          <img data-img="berfin.png" data-name="Berfin" alt="Porträtt på Berfin">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Chipego -->
+    <section id="chipego" class="panel" style="--c:#10b981">
+      <div class="content">
+        <div class="text">
+          <h2>Chipego</h2>
+          <p>Chipego är den som alltid hittar lösningar när något känns svårt. Han har en lugn energi som gör att hela gruppen känner sig trygg. 
+          När något krånglar, är det ofta han som ser till att vi löser det tillsammans med ett leende.</p>
+          <p class="quote">“Problem är bara pussel som väntar på att lösas.”</p>
+        </div>
+        <figure class="photo">
+          <img data-img="chipego.png" data-name="Chipego" alt="Porträtt på Chipego">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Bayan -->
+    <section id="bayan" class="panel" style="--c:#3b82f6">
+      <div class="content">
+        <div class="text">
+          <h2>Bayan</h2>
+          <p>Bayan bidrar alltid med energi och glädje. Hon gillar att testa nya idéer och är inte rädd för att prova sig fram. 
+          Hon har också en skarp blick för detaljer och ser till att allt blir snyggt och välgjort.</p>
+          <p class="quote">“Det bästa med att koda är när man äntligen får allt att funka – magi!”</p>
+        </div>
+        <figure class="photo">
+          <img data-img="bayan.png" data-name="Bayan" alt="Porträtt på Bayan">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ali -->
+    <section id="ali" class="panel" style="--c:#ec4899">
+      <div class="content">
+        <div class="text">
+          <h2>Ali</h2>
+          <p>Ali är alltid på gott humör och får oss andra att skratta. Han är också kreativ och tycker om att bygga saker som både ser snygga ut och funkar bra. 
+          Hans styrka är att tänka praktiskt men ändå våga testa nya vägar.</p>
+          <p class="quote">“En bug är bara en chans att bli lite bättre.”</p>
+        </div>
+        <figure class="photo">
+          <img data-img="ali.png" data-name="Ali" alt="Porträtt på Ali">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Andy -->
+    <section id="andy" class="panel" style="--c:#f59e0b">
+      <div class="content">
+        <div class="text">
+          <h2>Andy</h2>
+          <p>Andy är lagets idéspruta. Han kommer ofta med kreativa förslag och gillar att sätta en rolig twist på saker. 
+          Han har också ett stort intresse för design och vill gärna göra allt både snyggt och användbart.</p>
+          <p class="quote">“Kod är bäst när den är enkel och kul.”</p>
+        </div>
+        <figure class="photo">
+          <img data-img="andy.png" data-name="Andy" alt="Porträtt på Andy">
+        </figure>
+      </div>
+    </section>
+  </main>
+    
+    <section id="kontakt" class="panel outro" style="--c:#a78bfa">
+      <div class="content">
+        <div class="text">
+          <h2>Hör av dig</h2>
+          <p>Vi i <strong>Code 5</strong> är alltid öppna för nya kontakter, samarbeten eller bara en rolig pratstund. Skriv gärna till oss här nedan 👇</p>
+          <form id="contactForm" class="form" novalidate>
+            <label> Namn
+              <input id="name" required />
+            </label>
+            <label> E-post
+              <input id="email" type="email" required />
+            </label>
+            <button class="btn" type="submit">Skicka</button>
+            <p id="sent" class="success" hidden>Tack! Vi hör av oss. ✉️</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
